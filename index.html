@@ -24,7 +24,7 @@ form.addEventListener('submit', async (e) => {
   formData.append('docx', fileInput.files[0]);
 
   try {
-    const res = await fetch('/upload', {
+    const res = await fetch('https://docxparser.onrender.com/upload', {
       method: 'POST',
       body: formData
     });
